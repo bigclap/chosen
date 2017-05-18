@@ -195,7 +195,7 @@ class AbstractChosen
             if searchText.length
               startpos = option.search_text.search highlightRegex
               text = option.search_text.substr(0, startpos + searchText.length) + '</em>' + option.search_text.substr(startpos + searchText.length)
-              option.search_text = text.substr(0, startpos) + '<em>' + text.substr(startpos)
+              option.search_text = text.substr(0, startpos) + '<em>' + text
 
             results_group.group_match = true if results_group?
 
